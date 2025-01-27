@@ -12,4 +12,26 @@
 		<h2>This is a form</h2>
 		<form>
 			<label for="ip01">Enter text</label>
-			<input type="ip01" name="text" placeholder="This is an expample for text type">
+			<input type="text" id="ip01" name="text" placeholder="This is an expample for text type">
+			<br>
+			<label for="radio">Choose one option</label><br>
+			<input type="radio" id="radio" name="radio" value="option1">Option1
+			<input type="radio" id="radio" name="radio" value="option2">Option2
+			<br>
+			<h3>Enter some texts</h3>
+			<textarea rows="5" cols="50" name="textarea"></textarea><br>
+			<input type="submit" value="submit">
+
+			<br>
+
+			<label for="select">Select something</label>
+			<select id="select" name="select">
+				<option value="option1">Option1</option>
+				<option value="option2">Option2</option>
+				<option value="option3">Option3</option>
+			</select><br><br>
+			<button type="button" onclick="alert('You just a saw pop up');" name="button">Clieck here to see a pop up</button>
+
+			</form>
+			</body>
+</html>
