@@ -6,7 +6,7 @@
     <title>Sign Up</title>
 </head>
 <body>
-    <div style="text-align: center; width: 50%; margin: 0 auto;">
+    <div style="text-align: center;">
         <h2>Sign up &amp; Registration</h2>
         <form>
             <div style="margin-bottom: 10px;">
@@ -19,19 +19,26 @@
             </div>
             <div style="margin-bottom: 10px;">
                 <label for="email" style="display: inline-block; width: 150px; text-align: left;">Email:</label>
-                <input type="email" id="email" name="email" style="width: 200px;" required>
+                <input type="email" id="email" name="email" placeholder="email@example.com" style="width: 200px;" required>
             </div>
             <div style="margin-bottom: 10px;">
                 <label for="tel" style="display: inline-block; width: 150px; text-align: left;">Phone No:</label>
-                <input type="tel" id="tel" name="tel" style="width: 200px;" required>
+                <input type="tel" id="tel" name="tel" placeholder="+91XXXXXXXXXX" style="width: 200px;" required>
             </div>
             <div style="margin-bottom: 10px;">
                 <label for="dob" style="display: inline-block; width: 150px; text-align: left;">DOB:</label>
                 <input type="date" id="dob" name="dob" style="width: 200px;" required>
             </div>
             <div>
+                <label for="pwd" style="display: inline-block; width: 150px; text-align: left;">Enter New Password:</label>
+                <input type="password" id="pwd" name="pwd" style="width: 200px;" required>
+            </div><br>
+            <div>
                 <input type="submit" value="Sign Up">
+                <input type="reset" value="Reset" onclick="alert('all the info you entered will be cleared');">
+                <br><br><a href="login.html"><i>go back</i></a>
             </div>
+
         </form>
     </div>
 </body>
