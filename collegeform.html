@@ -6,32 +6,37 @@
     <title>Form</title>
 </head>
 <body>
-    <h3 style="text-align: center;">Contact us</h3>
+    <h2 style="text-align: center;">Contact us</h2>
     <form style="text-align: center;">
-        <div style="display: inline-block;">
-            <label for="fname">First Name:</label>
+        <div style="display: inline-block; padding: 15px">
+            <label for="fname" style="display: inline-block; width: 150px; text-align: left;">First Name:</label>
             <input type="text" name="fname" id="fname">
         </div><br>
 
-        <div style="display: inline-block;">
-            <label for="lname">Last Name:</label>
+        <div style="display: inline-block; padding: 15px">
+            <label for="lname" style="display: inline-block; width: 150px; text-align: left;">Last Name:</label>
             <input type="text" id="lname" name="lname">
         </div><br>
 
-        <div style="display: inline-block;">
-            <label for="email">Email:</label>
+        <div style="display: inline-block; padding: 15px">
+            <label for="email" style="display: inline-block; width: 150px; text-align: left;">Email:</label>
             <input type="email" id="lname" name="lname" placeholder="email@example.com">
         </div><br>
 
-        <div style="display: inline-block;">
-            <label for="tel">Phone:</label>
-            <input type="tel" id="lname" name="lname" placeholder="+91 1234567890">
+        <div style="display: inline-block; padding: 15px;">
+            <label for="tel" style="display: inline-block; width: 150px; text-align: left;">Phone:</label>
+            <input type="tel" id="lname" name="lname" placeholder="+91 1234567890" required>
         </div><br>
 
-        <div style="display: inline-block;">
-            <label for="enq">Phone:</label>
-            <textarea id="enq" rows="5" cols="50" name="desc"></textarea>
+        <div style="display: inline-block; padding: 15px;">
+            <label for="enq" style="display: inline-block; width: 150px; text-align: left;">Your Message:</label>
+            <textarea id="enq" rows="5" cols="50" name="desc" placeholder="Write your message here"></textarea>
         </div><br>
+
+        <div style="display: inline-block; padding: 15px;">
+            <input type="submit" name="submit" value="Submit" style="padding: 10px;">
+            <input type="reset" name="reset" value="Reset" style="padding: 10px;" onclick="alert('All the info you entered will be cleared')">
+        </div>
     
 </body>
 </html>
