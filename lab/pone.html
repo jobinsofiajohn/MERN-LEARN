@@ -3,13 +3,70 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width: device-width, initial-scale: 1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Form</title>
 	</head>
 
 	<body>
 		<div style="text-align: center">
 			<h2>Form</h2>
 			<form>
-				<div style="display: inline-block">
-					<label for="name" style="display: inline-block; text-align: left; width: 400;" >Name:</label>
-					<input type="text" id="name" name="name">
+				<div style="padding: 10px">
+					<label for="name" style="display: inline-block; text-align: left; width: 100px;" >Name:</label>
+					<input type="text" id="name" name="name" style="display: inline-block; padding: 5px; width: 150px" placeholder="name" maxlength="25" required>
+				</div>
+
+				<div style="padding: 10px">
+					<label for="email" style="display: inline-block; text-align: left; width: 100px;" >Email:</label>
+					<input type="email" id="email" name="email" style="display: inline-block; padding: 5px; width: 150px" value="test@example.com" autofocus required>
+				</div>
+
+				<div style="padding: 10px">
+					<label for="pwd" style="display: inline-block; text-align: left; width: 100px;" >Password:</label>
+					<input type="password" id="pwd" name="pwd" style="display: inline-block; padding: 5px; width: 150px" minlength="6" required>
+				</div>
+
+				<div style="padding: 10px">
+					<label for="select" style="display: inline-block; text-align: left; width: 100px;" >Category:</label>
+					<select id="select" name="select" style="display: inline-block; padding: 5px; width: 166px" required>
+						<option value="stu">Student</option>
+						<option value="emp">Employee</option>
+						<option value="free" selected>Freelancer</option>
+					</select>
+				</div>
+
+				<div style="padding: 10px">
+					<label for="date" style="display: inline-block; text-align: left; width: 100px;" >Event Date:</label>
+					<input type="date" id="date" name="date" style="display: inline-block; padding: 5px; width: 150px" required>
+				</div>
+
+				<div style="padding: 10px; margin-left: 76px">
+					<label style="display: inline-block; text-align: left; width: 90px;" >Tickets:</label>
+					<div class="radio-group" style="display: inline-block; text-align: left; margin-right: 10px">
+					<input type="radio" value="OP1" name="radio" required>Option 1
+					<input type="radio" value="OP2" name="radio" checked>Option 2
+					<input type="radio" value="OP3" name="radio">Option 3
+					</div>
+				</div>
+
+				<div style="padding: 10px; margin-right: 45px">
+					<label for="checkbox" style="display: inline-block; text-align: left; width: 90px;" >Payment:</label>
+					<input type="checkbox" id="checkbox" name="cb" value="op_yes" required><b>Online Payment</b>
+				</div>
+
+				<div style="padding: 10px; margin-left: 230px;">
+					<label for="ta" style="display: inline-block; text-align: left; width: 100px;" >Notes:</label>
+					<textarea id="ta" name="ta" style="display: inline-block; padding: 5px;" rows="5" cols="50" placeholder="Enter notes here"></textarea>
+				</div>
+				
+				<input type="submit" name="submit" value="Submit" style="display: inline-block; padding: 8px; margin-right: 15px;">
+			</form>
+		</div>
+	</body>
+</html>
+
+				
+				
+				
+				
+				
