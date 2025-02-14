@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        @keyframes a {
+            from{background-color: white;}
+            to{background-color: #3619c8;}
+
+            from{font-size: 1em;}
+            to{font-size: 2em;}
+
+            from{border-radius: 1em;}
+            to{border-radius: 2em;}
+            
+        }
+        *{margin: 0px; padding:0px}
+
+        body{
+            text-align: center;
+        }
+
+        p{
+            margin:10px auto;
+            width:250px;
+            padding: 50px;
+            background-color: aquamarine;
+            border: 3px dashed black;
+        }
+
+        .p:nth-child(odd){
+            color: red;
+        }
+        a[target = "_blank"]{
+            text-decoration: none;
+            font-weight: bold;k
+            color: red;      
+        }
+        p:hover{
+            animation-name: a;
+            animation-duration: 2s;
+            background-color: rgba(0,200,0,0.7);
+            font-size: 2em;
+            border-radius: 2em;        
+        }
+    </style>
+</head>
+<body>
+    <p class="p">This is first para</p>
+    <p class="p">This is first para</p>
+    <p class="p">This is first para</p>
+    <p class="p">This is first para</p>
+    <p class="p">This is first para</p>  <br>
+    <a href="style.css" target="_blank">Link1</a><br><br>
+    <a href="style.css">Link2</a> 
+</body>
+</html>

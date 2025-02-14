@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picutre</title>
+    <style>
+        @keyframes a {
+
+            from{background-color: blue;}
+            to{background-color: white}
+
+            from{font-size:1em}
+            to{font-size:2em}
+
+            from{border-radius: 0%;}
+            to{border-radius: 50%;}
+            
+        }
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        body{
+            background: rgb(97, 93, 87) url(https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp)
+            no-repeat fixed center;
+
+            
+        }
+
+        .main{
+            display: flex;
+            justify-content: space-between;
+            margin:100px auto;
+        }
+        #test{
+            text-align: right;
+        }
+
+        .sec{
+            padding: 50px;
+            margin: 100px 20px;
+        }
+
+        .sec:hover{
+            animation-name: a;
+            animation-duration: 2s;
+            background-color: white;
+            font-size:2em;
+            border-radius: 50%;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="main">
+    <div class="sec">
+        <p>Test</p>
+        
+    </div>
+
+    <div class="sec">
+        <p>Test</p>
+        
+    </div>
+    </div>
+</body>
+</html>

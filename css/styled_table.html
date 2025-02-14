@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body{
+            background-color: #f0f0f2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .fdiv{
+            margin: 100px auto;
+            width: 70%;
+            text-align: center;
+            border: 5px inset black;
+            box-shadow: 0px 0px 20px black;
+            padding: 15px;
+            background-color: #fdfdff;
+            border-radius: 1em;
+            overflow-x: auto;
+        }
+        .sdiv{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .tdiv{
+            display: flex;
+            justify-content: space-between;
+        }
+        table{
+            margin: auto;
+            width: 90%;
+            border-collapse: collapse;
+            text-align: left;
+
+        }
+        thead{
+            font-weight: bold;
+        }
+
+        td{
+            padding: 4px;
+        }
+        
+        .pagination{
+            display: flex;
+            font-size: small;
+            
+        }
+
+        li{
+            padding: 0px;
+            margin: 5px 5px;
+            border: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            padding: 6px 10px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background-color: #f0f0f2;
+        }
+        a:hover{
+            background-color: blue;
+        }
+
+        .snd{
+            margin: 5px 10px;
+            border-radius: 1em;
+        }
+        .fa-eye{
+            color: blue;
+        }
+        .fa-edit{
+            color: green;
+        }
+        .fa-trash{
+            color: red;
+        }
+        .fa-edit:hover,.fa-eye:hover,.fa-trash:hover{
+            cursor: pointer;
+        }
+        .table{
+            overflow-x: auto;
+        }
+        tr:nth-child(even){
+            background-color: #f0f0f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="fdiv">
+        <h2>The Heading</h2>
+        <div class="sdiv">
+            <p>show<select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                </select>entries</p>
+            <input type="search" placeholder="search">
+        </div>
+        <div class="table">
+        <table border="1">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Name</td>
+                    <td>Address</td>
+                    <td>City</td>
+                    <td>Pincode</td>
+                    <td>Country</td>
+                    <td>Actions</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Thomas Hardy</td>
+                    <td>89 Chisario Road</td>
+                    <td>Portland</td>
+                    <td>91219</td>
+                    <td>USA</td>
+                    <td>
+                        <i class="fa fa-eye"></i> 
+                        <i class="fa fa-edit"></i> 
+                        <i class="fa fa-trash"></i>
+                    </td>
+                </tr>
+
+                <td>1</td>
+                <td>Thomas Hardy</td>
+                <td>89 Chisario Road</td>
+                <td>Portland</td>
+                <td>91219</td>
+                <td>USA</td>
+                <td>
+                    <i class="fa fa-eye"></i> 
+                    <i class="fa fa-edit"></i> 
+                    <i class="fa fa-trash"></i>
+                </td>
+            </tr>
+
+            <td>1</td>
+            <td>Thomas Hardy</td>
+            <td>89 Chisario Road</td>
+            <td>Portland</td>
+            <td>91219</td>
+            <td>USA</td>
+            <td>
+                <i class="fa fa-eye"></i> 
+                <i class="fa fa-edit"></i> 
+                <i class="fa fa-trash"></i>
+            </td>
+        </tr>
+
+        <td>1</td>
+        <td>Thomas Hardy</td>
+        <td>89 Chisario Road</td>
+        <td>Portland</td>
+        <td>91219</td>
+        <td>USA</td>
+        <td>
+            <i class="fa fa-eye"></i> 
+            <i class="fa fa-edit"></i> 
+            <i class="fa fa-trash"></i>
+        </td>
+    </tr>
+
+
+    <td>1</td>
+    <td>Thomas Hardy</td>
+    <td>89 Chisario Road</td>
+    <td>Portland</td>
+    <td>91219</td>
+    <td>USA</td>
+    <td>
+        <i class="fa fa-eye"></i> 
+        <i class="fa fa-edit"></i> 
+        <i class="fa fa-trash"></i>
+    </td>
+</tr>
+
+<td>1</td>
+<td>Thomas Hardy</td>
+<td>89 Chisario Road</td>
+<td>Portland</td>
+<td>91219</td>
+<td>USA</td>
+<td>
+    <i class="fa fa-eye"></i> 
+    <i class="fa fa-edit"></i> 
+    <i class="fa fa-trash"></i>
+</td>
+</tr>
+
+        </table>
+        </div>
+        <div class="tdiv">
+            <p style="text-align: left;">Showing <b>5</b> out of 25 entries</p>
+            <div>
+            <ul class="pagination" type="none">
+                <li ><a href="#" class="snd">Prev</a></li>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#" class="active">3</a></li>
+                <li><a href="#">4</a></li>
+                <li ><a href="#" class="snd">Next</a></li>
+            </ul></div>
+        </div>
+    </div>
+
+</body>
+</html>

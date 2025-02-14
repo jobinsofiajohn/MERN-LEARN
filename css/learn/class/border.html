@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes a {
+
+            from{background-color: white;}
+            to{background-color: red;}
+
+            from{border-style: dotted}
+            to{border-style: solid;}   
+            
+            from{font-size: 1em;}
+            to{font-size: 2em;}
+
+            from{border-radius: 2em;}
+            to{border-radius: 50%;}
+        }
+        #circle{
+            margin:30vh auto;
+            padding: 50px;
+            width: 100px;
+            height:100px;
+            border:2px dashed black;
+            border-radius: 50%;
+            box-shadow: 0px 0px 20px black;
+            
+        }
+
+        p{
+            margin: 35px auto;
+            text-align: center;
+        }
+
+        div:hover{
+            animation-name: a;
+            animation-duration:2s;
+            background-color: #6feec0;
+            font-size: 2em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="circle"><p>Circle</p></div>
+    <div id="square"><p></p></div>
+</body>
+</html>

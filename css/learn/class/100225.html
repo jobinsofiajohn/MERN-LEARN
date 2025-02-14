@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @keyframes example {
+  from {background-color: white;}
+  to {background-color: red;}
+}
+        p{
+            text-align: center;
+            color: blue;
+            text-shadow: 0px 0px 5px black;
+        }
+        div{
+            margin: 30vh auto;
+            width: 50%;
+            box-shadow: 0px 0px 20px black;
+            border-radius: 1em;
+            padding: 10px;
+        }
+        div:hover{
+            animation-name: example;
+            animation-duration: 1s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1 style="text-align: center; color: green; text-shadow: 0px 0px 2px red;">Heading</h1> 
+    <h2>This is styled with external CSS</h2> 
+    <p>This is styled with internal CSS</p>
+    </div>
+</body>
+</html>
