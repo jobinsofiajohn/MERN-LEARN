@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      border: 1px solid black;
+    }
+    .two{
+      width: 200px;
+      height: 300px;
+      position: relative;
+      left: 230px;
+    }
+    .three{
+      width: 200px;
+      height: 300px;
+      position: fixed;
+      bottom:10px;
+      right:200px;
+      z-index: 1;
+      background-color: azure;
+
+    }
+    .one{
+      width: 200px;
+      height: 300px;
+      position: absolute;
+      top: 200px;
+    }
+    .four{
+      width: 200px;
+      height: 300px;
+      position: sticky;
+      top: 10px;
+      left: 500px;
+      background-color: blanchedalmond;
+    }
+    .test{
+      height: 500px;
+      width:50px;
+      overflow: auto;
+      white-space: nowrap;
+    }0
+
+  </style>
+</head>
+<body style="position: relative;">
+  <div class="one">This is absolute</div>
+  <div class="two">This is relative</div>
+  <div class="three">This is fixed</div>
+  <div class="four">This is sticky</div>
+  <div class="test">This is static also to test overflow</div>
+  <div class="test">This is static also to test overflow</div>
+</body>
+</html>
