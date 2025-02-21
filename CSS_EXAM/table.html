@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Table</title>
+    <style>
+     @keyframes ani {
+
+      from{background-color: rgba(193, 217, 218, 0.589);}
+      to{background-color: white;}
+      from{border-radius: 0%;}
+      to{border-radius: 2em;}
+      from{box-shadow: none;}
+      to{box-shadow: 0px 0px 20px black;}
+      
+     } 
+
+     @keyframes ani2{
+      from{background-color: rgba(241, 243, 245, 0.966)}
+      to{background-color: rgba(193, 217, 218, 0.589);}
+     }
+
+     @keyframes ani3{
+      from{color: white;}
+      to{color: black;}
+     }
+      body{
+        background-color: rgba(241, 243, 245, 0.966);
+        font-family: Arial, sans-serif;
+      }
+    div.main{
+      border: 5px groove red;
+      height: 40vh; 
+      width: 50vw;
+      margin: 100px auto;
+      padding: 50px;
+      background-color: rgba(193, 217, 218, 0.589);
+    }
+    table{
+      border-collapse: collapse;
+      margin: 10px auto;
+      margin-top: 15px;
+      width: 90%;
+      height: 90%;
+    }
+    th{
+      padding: 10px;
+    }
+    tbody{
+      vertical-align: bottom;
+      text-indent: 2px;
+      color: rgba(14, 11, 11, 0.54);
+    }
+
+    .main:hover{
+      animation-name: ani;
+      animation-duration: 2s;
+      background-color: white;
+      border-radius: 2em;
+      box-shadow: 0px 0px 20px black;
+
+    }
+    body:has(.main:hover) {
+  animation-name: ani2;
+  animation-duration: 2s;
+  background-color: rgba(193, 217, 218, 0.589);
+}
+
+tr:nth-child(odd){
+  background-color: #f2f2f2;
+}
+table:hover tbody{
+  animation-name: ani3;
+  animation-duration:2s;
+  color: black;
+}
+
+/* Link as Button */
+
+.link-as-btn{
+  text-align: center;
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin: 0px;
+  padding: 20px 40px;
+  background-color: rgb(114, 72, 72);
+  font-size: bold;
+  border-radius: 2em;
+}
+
+a:hover{
+  background-color: rgba(114, 72, 72, 0.601);
+  text-shadow: 4px 4px 5px red;
+  font-weight: bold;
+}
+
+@media  only screen and (max-width:400px) {
+
+  body{
+    background-color: rgba(255, 0, 0, 0.448); 
+  }
+  div:nth-child(1){
+    background-color: red;
+  }
+
+  table{
+    background-color: blanchedalmond;
+  }
+  
+}
+  
+    </style>
+  </head>
+  <body>
+      <div class="main">
+        <table border="1">
+          <thead>
+            <tr>
+            <th>ID</td>
+            <th>Name</td>
+            <th>Price</td>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>001</td>
+            <td>Product 1</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>001</td>
+            <td>Product 1</td>
+            <td>$100</td>
+          </tr>
+            <tr>
+            <td>001</td>
+            <td>Product 1</td>
+            <td>$100</td>
+          </tr>         <tr>
+            <td>001</td>
+            <td>Product 1</td>
+            <td>$100</td>
+          </tr>         <tr>
+            <td>001</td>
+            <td>Product 1</td>
+            <td>$100</td>
+          </tr>
+          <tbody>
+        </table>
+      </div>
+      <div class="link-as-btn">
+        <a href="#">This is a Link</a>
+      </div>
+  </body>
+</html>
