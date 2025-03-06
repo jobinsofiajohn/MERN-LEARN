@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab two</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+/* @media (max-width: 576px) {
+  .nav-con{
+  margin:0 !important;
+  padding:0 !important;
+ }
+} */
+
+.container-fluid{
+  min-width:272px;
+}
+ .nav-con{
+  margin:0;
+  padding:0;
+ }
+ .c-link{
+        display: block;
+        padding: 0px;
+        margin:-10px;
+        margin-left: 5px;
+      }
+      .card-link:hover {
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+   <div class="container-fluid nav-con">
+      <div class="row no-gutters">
+        <div class="col">
+          <nav class="navbar navbar-expand-lg navbar-dark text-white bg-dark">
+  <a class="navbar-brand" href="#">Project Name</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      </ul>
+      <ul class="navbar-nav nav-right">
+      <li class="nav-item">
+        <a class="nav-link font-weight-bold" href="#">Logged in as Username</a>
+      </li>
+      </ul>
+  </div>
+</nav>
+      </div>    
+   </div>
+   <div class="container-fluid mt-3">
+     <div class="row">
+        <div class="col-12 col-md-2 order-sm-1 order-1">
+          <div class="card d-none d-sm-block ">
+            <div class="card-body">
+              <div class="card-title">
+                <p>Heading 1</p>
+              </div>
+              <div class="card-text">
+                <a href="#" class="card-link d-block c-link">Link</a><br>
+                <a href="#" class="card-link d-block c-link">Link</a><br>                
+                <a href="#" class="card-link d-block c-link">Link</a><br>                
+                <a href="#" class="card-link d-block c-link">Link</a><br>                
+              </div>
+              <div class="card-title">
+                <p>Heading 1</p>
+              </div>
+              <div class="card-text">
+                <a href="#" class="card-link d-block c-link">Link</a><br>
+                <a href="#" class="card-link d-block c-link">Link</a><br>                
+                <a href="#" class="card-link d-block c-link">Link</a><br>                
+                <a href="#" class="card-link d-block c-link">Link</a><br>                
+              </div>
+              <div class="card-title">
+                <p>Heading 1</p>
+              </div>
+              <div class="card-text">
+                <a href="#" class="card-link d-block c-link">Link</a><br>
+                <a href="#" class="card-link d-block c-link">Link</a><br>                
+                <a href="#" class="card-link d-block c-link">Link</a><br>                
+                <a href="#" class="card-link d-block c-link">Link</a><br>                
+              </div>
+            </div>
+          </div>
+
+          <div class="card d-block d-sm-none border-0">
+              <div class="dropdown d-flex d-sm-none">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Link</button>
+                <ul class="dropdown-menu p-3">
+                  <li>
+                    <div class="card-title">
+                      <p>Heading 1</p>
+                    </div>
+                    <div class="card-text">
+                      <a href="#" class="card-link p-2">Link</a>
+                      <a href="#" class="card-link p-2">Link</a>                
+                      <a href="#" class="card-link p-2">Link</a>                
+                      <a href="#" class="card-link p-2">Link</a>                
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card-title">
+                      <p class="pt-2">Heading 1</p>
+                    </div>
+                    <div class="card-text">
+                      <a href="#" class="card-link p-2">Link</a>
+                      <a href="#" class="card-link p-2">Link</a>                
+                      <a href="#" class="card-link p-2">Link</a>                
+                      <a href="#" class="card-link p-2">Link</a>                
+                    </div>
+                  </li>
+                  <li>
+                    <div class="card-title">
+                      <p class="pt-2">Heading 1</p>
+                    </div>
+                    <div class="card-text">
+                      <a href="#" class="card-link p-2">Link</a>
+                      <a href="#" class="card-link p-2">Link</a>                
+                      <a href="#" class="card-link p-2">Link</a>                
+                      <a href="#" class="card-link p-2">Link</a>                
+                    </div>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-10 order-sm-2 order-2 mt-3 mt-md-0">
+          <div class="row">
+            
+          <div class="card mr-md-3 bg-light">
+            <div class="card-body">
+              <div class="card-title">
+                <h2>Hello world</h2>
+              </div>
+              <div class="card-text">
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Learn More</button>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">This is the title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        This is a modal pop up
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+            </div>
+          </div>
+     </div>
+     <div class="card border-0">
+      <div class="card-body">
+     <div class="row mr-sm-2">
+       <div class="row">
+         <div class="col-12 col-sm">
+           <h2>Heading</h2>
+           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+           <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    View Details
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    
+  </div>
+</div>
+   </div>
+    <div class="col-12 col-sm">
+           <h2>Heading</h2>
+           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+           <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    View Details
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    
+  </div>
+</div>
+   </div> <div class="col-12 col-sm">
+           <h2>Heading</h2>
+           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+           <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    View Details
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    
+  </div>
+</div>
+   </div>
+   </div>
+<div class="row mt-3">
+         <div class="col-12 col-sm">
+           <h2>Heading</h2>
+           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+           <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    View Details
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    
+  </div>
+</div>
+   </div>
+    <div class="col-12 col-sm">
+           <h2>Heading</h2>
+           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+           <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    View Details
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    
+  </div>
+</div>
+   </div> <div class="col-12 col-sm">
+           <h2>Heading</h2>
+           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+           <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    View Details
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    
+  </div>
+</div>
+   </div>
+   </div>
+   </div>
+   </div>
+   </div>
+  </body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
