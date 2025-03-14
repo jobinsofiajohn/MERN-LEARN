@@ -6,10 +6,13 @@ const tout = () => {}
 
 let b = 5;
 
-if( let i = 0; i < b; i++){
+for( let i = 1; i <= b; i++){
+  function test(x){
 setTimeout(() => {
  const para = document.createElement("p");
-para.innerText = "This is a paragraph";
+para.innerText = "This is a paragraph " + i;
 document.body.appendChild(para); 
 }, i*1000);
+}
+test(i);
 }
